@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+.m1{width:180px; height:60px;
+background:#e6880e; border-radius:40px;
+margin:auto; }
+.m2{width:140px; height:50px;
+background:#e6880e; border-radius:40px;
+margin:auto;}
+.m3{width:100px; height:40px;
+background:#e6880e; border-radius:40px;
+margin:auto; }
+.m4{width:50px; height:50px;
+background:#e6880e; border-radius:0px 100% 100% 100%;
+margin:auto; margin-top:5px; margin-bottom:-15px;
+ transform:rotate(45deg);}
+.mukuta{ display:flex; flex-direction:column;
+padding:0px; 
+position:absolute; top:0; left:30%;}
+.face{
+    background:#f7e0d0;
+  /*  border:2px solid black;*/
+    border-radius:150px 150px 200px 200px;
+    width:200px;
+    height:240px;
+    position:absolute; top:25vh;  left:27vw;
+}
+.bindi{
+    background:red;
+    width:30px; height:30px;
+    border-radius:100%;
+    margin:auto; position:relative; top:20px;
+}
+.eyebrow-l{
+    background:black;
+    width:60px; height:10px;
+    border-radius:100% 5px 5px 0px;
+    position:relative; top:-5px; left:20px;
+    transform:rotate(4deg);
+}
+.eyebrow-r{
+    background:black;
+    width:60px; height:10px;
+    border-radius:5px 100% 0px 5px;
+    position:relative; top:50px; left:120px;
+    transform:rotate(-4deg);
+}
+.r-eye{
+    background:white;
+    border-radius:40px 0px 40px 0px;
+    width:40px; height:45px;
+    transform:rotate(50deg);
+    position:relative; top:48px; left:128px;
+    border:2px solid black;
+    box-shadow:2px 2px 8px #dba781;
+}
+.l-eye{
+    background:white;
+    border-radius:40px 0px 40px 0px;
+    width:45px; height:40px;
+    transform:rotate(40deg);
+    position:relative; top:-5px; left:33px;
+    border:2px solid black;
+    box-shadow:2px 2px 8px #dba781;
+}
+.eye-boll{
+    background:black;
+    width:25px; height:25px;
+    border-radius:25px ;
+    position:relative;
+    top:8px; left:10px;
+}
+.nose{
+  border:3px solid #b88979;
+  border-top:0px; border-left:0px;
+  border-radius:12px;
+  width:20px;
+  height:50px;
+  background:#f7e0d0;
+  position:relative; top:-25px; left:48%;
+  overflow:hidden;
+}
+.nose-l{
+  border:3px solid #b88979;
+  border-top:0px; border-left:0px;
+  border-radius:12px;
+  width:15px;
+  height:15px;
+  background:#f7e0d0;
+  position:relative; top:28px; left:40%;
+  transform:rotate(100deg);
+}
+.nose-r{
+  border:3px solid #b88979;
+  border-top:0px; border-left:0px;
+  border-radius:12px;
+  width:15px;
+  height:15px;
+  background:#f7e0d0; overflow:hidden;
+  position:relative; top:-70px; left:59%;
+  transform:rotate(41deg);
+}
+.nose-ring{
+  border:3px solid #470ee6;
+  border-top:0px; border-left:0px;
+  border-radius:100%;
+  width:25px;
+  height:25px;
+  background:#f7e0d0; overflow:hidden;
+  position:relative; top:-43px; left:59%;
+  transform:rotate(350deg);
+}
+.mouth-l{
+   background:#ad1710;
+   width:30px; height:10px;
+   border-radius:100% 8px 0px 0px;
+   position:relative; top:-50px; left:38%;
+}
+.mouth-r{
+   background:#ad1710;
+   width:30px; height:10px;
+   border-radius:8px 100% 0px 0px;
+   position:relative; top:-60px; left:53%;
+}
+.mouth-b{
+   background:#ad1710;
+   width:60px; height:10px;
+   border-radius:0px 0px 100% 100%;
+   position:relative; top:-63px; left:38%;
+   box-shadow:2px 5px 5px #f2cbae;
+}
+.hair-l{
+   width:150px; height:300px;
+   background:black; margin-left:10%;
+}
+.hair-r{
+   width:150px; height:300px;
+   background:black; margin-left:70%;
+}
+.base{
+   background:#ad561f;
+   width:170px; height:170px;
+   border-radius:90% 50px 100% 50px;
+   transform:rotate(160deg);
+}
+.handel{
+   background:#ad561f;
+   width:55px; height:350px;
+   border-radius:5px;
+   transform:rotate(20deg);
+   position:relative; top:20px; left:150px;
+}
+.head{
+   background:#ad561f;
+   width:100px; height:100px;
+   border-radius:100% 0 100% 30px;
+   transform:rotate(30deg);
+   position:relative; top:80px; left:215px;
+
+}
+.mid{
+    background:#ad561f;
+    width:100px; height:100px;
+    border-radius:100%;
+    position:relative; top:300px; left:170px;
+    }
+.bina{
+    position:absolute;
+    top:70px; left:60px;
+    transform:rotate(10deg);
+}
+
+.hair{
+    background:black;
+    width:240px; height: 350px;
+    border-radius:30% 30% 0 0;
+    position:absolute; top:20vh; left:22vw;
+
+}
+.ear-l{
+    background:#f7e0d0;
+    width:30px; height:50px;
+    border-radius:20px 20px 20px 5px;
+    position:absolute; top:34vh; left:21vw;
+}
+.ear-r{
+    background:#f7e0d0;
+    width:30px; height:50px;
+    border-radius:20px 20px 5px 20px;
+    position:absolute; top:34vh; left:77vw;
+}
+</style>
+</head>
+<body>
+<div class="hair"></div>
+<div class="ear-l"></div>
+<div class="ear-r"></div>
+<div class="mukuta">
+<div class="m4"></div>
+<div class="m3"></div>
+<div class="m2"></div>
+<div class="m1"></div>
+</div>
+<div class="face">
+<div class="bindi"></div>
+<div class="eyebrow-r" ></div>
+<div class="r-eye">
+<div class="eye-boll"></div>
+</div>
+<div class="eyebrow-l"></div>
+<div class="l-eye">
+<div class="eye-boll"></div>
+</div>
+<div>
+<div class="nose-l"></div>
+<div class="nose"></div>
+<div class="nose-ring"></div>
+<div class="nose-r"></div>
+
+</div>
+<div class="mouth">
+<div class="mouth-l"></div>
+<div class="mouth-r"></div>
+<div class="mouth-b"></div>
+</div>
+</div>
+<div class="bina">
+<div class="mid"></div>
+<div class="head"></div>
+<div class="handel"></div>
+<div class="base"></div>
+</div>
+</body>
+</html>
